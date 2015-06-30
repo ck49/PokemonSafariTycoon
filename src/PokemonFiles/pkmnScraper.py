@@ -9,7 +9,7 @@ def tf(str):
 	return 'false'
 startNum = raw_input('up to what pokemon have you completed? ')
 for i in range(721):
-	if(i >= startNum):
+	if(i >= int(startNum)):
 		page = urllib2.urlopen('http://veekun.com/dex/lookup?lookup=pokemon%3A' + str(i+1))
 		x = page.read()
 		#print page.read()
