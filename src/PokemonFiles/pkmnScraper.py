@@ -19,11 +19,11 @@ for i in range(721):
 		Catch  = re.search(r'capture_rate=.+', x).group(0)[13:-1]
 		Description = re.search(r'<dt><img alt="X" src="/static/pokedex/images/versions/x.png" title="X" /></dt>\s+<dd><p>.+', x).group(0)[90:-9]
 		Prey = raw_input('%s prey rank (between 1 and 4) '%(Name))
-		if(int(prey) != 1 and int(prey)!= 4):
+		if(int(Prey) != 1 and int(Prey)!= 4):
 			Carnivore = tf(raw_input('%s Carnivore? true or false '%(Name)))
-		if(int(prey)==1):
+		if(int(Prey)==1):
 			Carnivore = 'false'
-		if(int(prey) == 4):
+		if(int(Prey) == 4):
 			Carnivore = 'true'
 		Rarity = raw_input('%s rarity between 1 and 10 '%(Name))
 		temp = (raw_input('%s grass t/f '%(Name)), raw_input('lake tf? '), raw_input('mountain t/f? '))
