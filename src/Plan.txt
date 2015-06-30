@@ -1,0 +1,9 @@
+1. Make a player object with pertinent information regarding you, the owner (land owned, area owned, money)
+2. Make an interface to see your areas and stuff (AKA view object)
+3. Create an area object, and a pokemon
+4. Create a controller object which detects where you click. Have an instance of view inside of it, so it knows where it
+clicked.
+5. Create Pokedex, initialize in main.
+6. Do what it takes to get to the point where you can a) create an area with the interface
+b) buy a pokemon within an area
+7. 
